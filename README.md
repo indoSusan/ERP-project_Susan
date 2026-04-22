@@ -6,7 +6,7 @@ Produces timestamped, per-turn and per-word data that provides empirical groundi
 for close-reading analysis of **affective mirroring, validation cascades, position drift,
 and sycophancy** (Kirk et al., 2025).
 
-Disclaimer: this project is created with Claude Code 
+Disclaimer: this project is with assistance from Claude Code 
 
 ---
 
