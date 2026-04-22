@@ -1,0 +1,68 @@
+# ============================================================
+# SRHI Pipeline — Python Dependencies
+# Python 3.13, macOS arm64 (Apple Silicon M4)
+# ============================================================
+#
+# INSTALLATION ORDER:
+#   1. pip install torch>=2.7.0          (must come first — pyannote depends on it)
+#   2. pip install -r requirements.txt
+#
+# Or use setup_env.sh which handles this automatically.
+# ============================================================
+
+# ── Core ML — PyTorch with MPS support ───────────────────────────────────────
+torch>=2.7.0
+
+# ── Audio extraction ──────────────────────────────────────────────────────────
+ffmpeg-python==0.2.0
+
+# ── Speaker diarization (gated model — requires HF token + accepted license) ─
+pyannote.audio>=3.3.2
+
+# ── Transcription — ctranslate2 backend (CPU-only on Apple Silicon) ───────────
+faster-whisper>=1.1.1
+ctranslate2>=4.7.0               # arm64 native wheel; no Rosetta needed
+
+# ── Prosody analysis (Praat) — PyPI name is praat-parselmouth ─────────────────
+praat-parselmouth         # import as: import parselmouth
+
+# ── Sentiment analysis ────────────────────────────────────────────────────────
+transformers>=4.50.0,<5.6.0
+tokenizers>=0.21.0
+
+# ── Sentence embeddings + lexical entrainment ─────────────────────────────────
+sentence-transformers>=3.4.1
+
+# ── HuggingFace ecosystem ─────────────────────────────────────────────────────
+huggingface-hub>=1.7.0
+accelerate>=1.6.0
+
+# ── ONNX runtime (used internally by pyannote) ────────────────────────────────
+# IMPORTANT: install plain onnxruntime, NOT onnxruntime-gpu
+# The plain package has native arm64 wheels using Apple Accelerate.
+onnxruntime>=1.20.0
+
+# ── Data processing ───────────────────────────────────────────────────────────
+pandas>=2.2.3
+numpy>=1.26.4,<2.5.0            # <2.5 keeps scipy compatibility
+scipy>=1.13.0
+
+# ── Audio I/O ─────────────────────────────────────────────────────────────────
+soundfile>=0.12.1
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.10.0
+seaborn>=0.13.2
+adjustText>=1.2.0
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Progress bars ─────────────────────────────────────────────────────────────
+tqdm>=4.66.0
+
+# ── Terminal output ───────────────────────────────────────────────────────────
+rich>=14.0.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.3.5

@@ -1,0 +1,43 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+
+# Data — never commit raw video, audio, or large processed files
+DATA/
+data/audio/
+data/processed/
+outputs/per_video/
+outputs/merged/
+outputs/figures/
+
+# Logs — keep structure, not content
+logs/*.log
+
+# Model caches
+~/.cache/huggingface/
+~/.cache/torch/
+
+# Test artifacts
+tests/sample_clip.mp4
+tests/tmp/
+
+# Editor
+.vscode/
+.idea/
+*.swp
