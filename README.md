@@ -2,9 +2,17 @@
 
 Computationally-grounded qualitative analysis of human–AI companion interactions.
 
+The Social Reward Hacking Index (SRHI) is a framework for identifying
+patterns in AI companion behaviour where the system systematically rewards
+social approval rather than pursuing honest, balanced interaction (Kirk et al., 2025).
+
+This pipeline operationalises five core SRHI dimensions without an LLM-as-judge,
+using computationally tractable signals from transcription, sentiment, prosody,
+and turn dynamics.
+
 Produces timestamped, per-turn and per-word data that provides empirical grounding
 for close-reading analysis of **affective mirroring, validation cascades, position drift,
-and sycophancy** (Kirk et al., 2025).
+and sycophancy** 
 
 Disclaimer: this project is with assistance from Claude Code 
 
