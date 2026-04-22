@@ -2,7 +2,7 @@
 
 The Social Reward Hacking Index (SRHI) is a framework for identifying
 patterns in AI companion behaviour where the system systematically rewards
-social approval rather than pursuing honest, balanced interaction (Kirk et al., 2025).
+social approval rather than pursuing honest, balanced interaction (See: Kirk et al., 2025).
 
 This pipeline operationalises five core SRHI dimensions without an LLM-as-judge,
 using computationally tractable signals from transcription, sentiment, prosody,
@@ -13,7 +13,7 @@ for close-reading analysis of **affective mirroring, validation cascades, positi
 and sycophancy** 
 
 This pipeline was created for research purposes 
-Disclaimer: this project is with assistance from Claude Code 
+Disclaimer: this project is made with assistance from Claude Code 
 
 ---
 
